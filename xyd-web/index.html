@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Xyd-Web</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/portfolio-item.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/flex-styles.css">
+
+</head>
+
+<body ng-app="mainApp" style="background-image: url(assets/img/colnoiz.png);">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="top-header">
+        <div class="container">
+          <div class="site-info"><span>Mon-Sat 8:00-10:00. Sunday closed</span></div>
+          <div class="site-contact"><span>Tel. No. (000)000-0000</span></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">{{::event.title}}</a>-->
+            <a class="navbar-brand" href="#"><img src="assets/img/xdx-web_logo1.png" class="" alt=""></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li  ng-click="setIndex(0)" ng-class="(index==0) ? 'active' : ''">
+                  <!--<a  ui-sref="shome">{{event.menu[0].name}}</a>-->
+                  <a  ui-sref="shome">forum</a>
+
+                </li>
+                <li ng-click="setIndex(1)"  ng-class="(index==1) ? 'active' : ''">
+                    <!--<a ui-sref="contact">{{event.menu[1].name}}</a>-->
+                    <a ui-sref="contact">contact</a>
+                </li>
+
+                <li><!--<a href="#"> {{event.title}}</a>-->
+                    <a href="#"> promotions</a>
+                
+                </li>
+
+
+<li><!--<a href="#"> {{event.title}}</a>-->
+                    <a href="#"> photography</a>
+                
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+ 
+
+
+
+<table style="background-color: white; width: 90%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+        <tr> 
+            <td>
+                <a href="#"><img src="assets/img/chslight.JPG" class="size-image border-settings" alt=""></a>
+
+
+                <br> <br><br> <br>
+<div class="container">
+    <div class="row" style="text-align: center;">
+       
+       
+<h2 class="m-5">Geek Truther Forum</h2>
+        <p class="m-5">Welcome to xyd-web. articles posted will be articles submitted first.
+            For those who do not get posted feel free to join our forum by participating
+            in discussions on certain approved topics. Truther material would be appreciated.
+            Geek culture is always cool here. Memes. Gaming and Tech as well. Only rules in the 
+            forums are to be nice to people. any reported abuse will be investigated and
+            you get banned. THank you for your interest. 
+        </p>
+    </div>
+    
+</div>
+
+
+</div>
+
+<br> <br><br> <br>
+<div class="row">
+    <div class="col-md-4">
+        <a href="#">
+            <img class="img-responsive portfolio-item" src="assets/img/c1.png" alt="">
+        </a>
+        <div>
+            <h4>Conan Comic</h4>
+            <p>Buy this conan comic at thunderchiefpress.com. We did a video on this comic. I have no idea why but you can order it at the website. Thanks for chicking us out.</p>
+        </div>
+
+
+    </div>
+    <div class="col-md-4">
+        <a href="#">
+        <img class="img-responsive portfolio-item" src="assets/img/juli.JPG" alt="">
+        </a>
+        <div>
+        <h4>Juliette</h4>
+        <p>You should get yourself an eclectus bird if you want a really cool pet. The only thing bad about it is that the bird is so rare that you will feel bad about keeping it in your house. Beautufil.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <a href="#">
+        <img class="img-responsive portfolio-item" src="assets/img/trouv.JPG" alt="">
+        </a>
+        <div>
+        <h4>La Trouvaille</h4>
+       <p>COme eat at La Trouvaill Supper Club. This is actually the original La Trouvaille. But you probably dont care because everybody seems to have turned into societal zombies. :)</p>
+        </div>
+    </div>
+</div>
+</td>
+</tr>
+
+</tbody>
+</table>
+<!--third section -->
+<br> <br><br> <br>
+    <div id="footer" class="footer">
+                    <p>Thank you for your interest. </p>
+                    <p>Copyright &copy; Thunderchief Press productions 2020</p>
+                    <img src="assets/img/tctv1.png" class="" alt="">
+                
+            <!-- /.row -->
+    </div>
+
+<script src="./app/angular.min.js"></script>
+<script src="./app/mainApps.js"></script>
+
+<script src="./app/event/eventModule.js"></script>
+<script type="text/javascript">
+    console.log("angular object",angular);
+</script>
+
+
+</body>
+
+</html>

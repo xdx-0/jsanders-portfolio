@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="assets/img/portlogo.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<div id="background">
+<div class="nav">
+    <a class="a active" href="#">HOME</a>
+    <a class="b" href="#">ABOUT ME</a>
+    <a class="c" href="#">PHOTO GALLERY</a>
+    <a class="d" href="#">EMAILS</a>
+    <a class="e" href="#">SITES</a>
+    <a class="f" href="#">CONTACT</a>
+
+</div>
+</div>
+<div class="content">
+    <div class="home">
+        <h1>James Sanders</h1>
+        <h3>Web Design/Photography</h3>
+    </div>
+    <div class="aboutus">
+        <p><b>Hello Friends,</b><br>
+        Welcome to my portfolio. <br>A student looking to put my skils 
+        to use. I am passionate about gaining knowledge, experience 
+        and improving my skills in 
+        web design and photography. I design and run my own personal blog
+         called thunderchiefpress.com. Feel free to check it out. Whatever you need i probably can do it.
+        I am also pretty dedicated worker. Wouldnt you like to have me as 
+        your web developer or photographer. Hire me and look no further.<br>
+
+        My skills are in:<br>
+        HTML, CSS, SQL, PHP, Javascript, Photoshop
+        <br>
+        Thank you for your time! :)
+         <br>
+        sincerely<br>
+        James Sanders</p>
+    </div>
+
+
+    <div class="gallery">
+        <div class="image">
+            <img src="assets/img/1aa.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/5.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/7.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/brd.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/chslight.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/seatle.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/conoiz.png" />
+        </div>
+        <div class="image">
+            <img src="assets/img/trouv.png" />
+        </div>
+    </div>
+
+    <div class="sites">
+        <div class="links">
+            <a class="openpop" href="bowl-south"><img style="border: 1px solid ; width: 350px; height: 200px;" src="assets/img/bwl.png"></a>
+        </div>   
+        <div class="links">
+            <a class="openpop" href="latrouvaille"><img style="border: 1px solid ; width: 350px; height: 200px;" src="assets/img/la.png"></a>
+        </div>
+        <div class="links">
+            <a class="openpop" href="source-clean"><img style="border: 1px solid ; width: 350px; height: 200px;" src="assets/img/src.png"></a>
+        </div>
+        <div class="links">
+            <a class="openpop" href="xyd-web"><img style="border: 1px solid ; width: 350px; height: 200px;" src="assets/img/xyd.png"></a>      
+        </div>
+        <div class="links">
+            <a class="openpop" href="https://www.thunderchiefpress.com/home"><img style="border: 1px solid ; width: 350px; height: 200px;" src="assets/img/tcpress.png"></a>      
+        </div>
+        <div class="wrapper">
+                <div class="popup">
+                    <iframe src="" width="700" height="500">
+                        <p>Your browser does not support iframes.</p>
+                    </iframe>
+            <a href="#" class="close"><img style="" src="assets/img/x1.png"></a>
+                </div>
+        </div>
+    </div>
+
+<div class="emails">
+    <div class="links">
+        <a class="openpop" href="email_templates/bowlsouth"><img style="border: 1px solid ; width: 200px;" src="assets/img/bowl1.png"></a>
+    </div>
+    <div class="links">    
+        <a class="openpop" href="email_templates/latrou"><img style="border: 1px solid ; width: 200px; " src="assets/img/latr1.png"></a>
+    </div>
+    <div class="links">   
+        <a class="openpop" href="email_templates/legacy"><img style="border: 1px solid ; width: 200px;" src="assets/img/leg1.png"></a>
+    </div>    
+    <div class="links">  
+        <a class="openpop" href="email_templates/dynasty"><img style="border: 1px solid ; width: 200px; " src="assets/img/dyn1.png"></a>
+    </div>
+        <div class="wrapper">
+            <div class="popup">
+                <iframe src="" width="625" height="500">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+        <a href="#" class="close"><img style="" src="assets/img/x1.png"></a>
+        
+            </div>
+        </div>
+</div>
+
+
+
+
+<div class="contactus">
+    <div class="contactform">
+        <form action="index.html" method="post">
+            <input type="text" name="" class="inputtext" value="First Name">
+            <input type="text" name="" class="inputtext" value="Last Name">
+            <input type="text" name="" class="inputtext" value="Your Email">
+            <textarea cols="4" rows="6" class="inputmessage">I have php contact form for email its just not on this porfolio. if you wish to see it we can arrange a meeting or interview. thanks again. :)</textarea>
+            <input type="button" name="" class="submitbutton" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+</div>
+
+
+<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').click(function(){
+            //alert("I am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $e = $('.e'),
+        $f = $('.f'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus');
+        $gallery = $('.gallery');
+        $emails = $('.emails');
+        $sites = $('.sites');
+        $contactus = $('.contactus');
+
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutus.fadeOut();
+            $gallery.fadeOut();
+            $emails.fadeOut();
+            $sites.fadeOut();
+            $contactus.fadeOut();
+        });
+        $b.click(function(){
+            $aboutus.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $contactus.fadeOut();
+            $sites.fadeOut();
+            $emails.fadeOut();
+        });
+        $c.click(function(){
+            $aboutus.fadeOut();
+            $home.fadeOut();
+            $gallery.fadeIn();
+            $contactus.fadeOut();
+            $emails.fadeOut();
+            $sites.fadeOut();
+        });
+        $d.click(function(){
+            $contactus.fadeOut();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $aboutus.fadeOut();
+            $emails.fadeIn();
+            $sites.fadeOut();
+        });
+        $e.click(function(){
+            $contactus.fadeOut();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $aboutus.fadeOut();
+            $sites.fadeIn();
+            $emails.fadeOut();
+        });
+        $f.click(function(){
+            $contactus.fadeIn();
+            $home.fadeOut();
+            $sites.fadeOut();
+            $emails.fadeOut();
+            $gallery.fadeOut();
+            $aboutus.fadeOut();
+
+        });
+        
+
+    });
+
+</script>
+
+<!--https://stackoverflow.com/questions/25781628/how-to-load-iframe-content-in-popup-div -->
+
+<script type="text/javascript" >
+  $(document).ready(function () {
+    $(".popup").hide();
+    $(".openpop").click(function (e) {
+        e.preventDefault();
+        $("iframe").attr("src", $(this).attr('href'));
+        $(".links").fadeOut('slow');
+        $(".popup").fadeIn('slow');
+    });
+
+    $(".close").click(function () {
+        $(this).parent().fadeOut("slow");
+        $(".links").fadeIn("slow");
+    });
+});
+</script>
+
+
+
+</body>
+</html>
